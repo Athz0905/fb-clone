@@ -10,7 +10,7 @@ const Post = ({ name, message, email, postImage, image, timestamp }) => {
     <div className="flex flex-col">
       <div className="px-4 pt-5 pb-3 bg-white mt-5 rounded-t-2xl shadow-sm">
         <div className="flex items-center space-x-2">
-          <img
+          <Image
             src={session.user.image}
             width={40}
             height={40}
@@ -35,7 +35,7 @@ const Post = ({ name, message, email, postImage, image, timestamp }) => {
 
       {postImage && (
         <div className="relative h-56 md:h-96 bg-white">
-          <Image src={postImage} objectFit="cover" layout="fill" />
+          <Image src={postImage} objectFit="cover" layout="fill" alt="" />
         </div>
       )}
 
