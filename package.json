@@ -4,17 +4,26 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "11.1.0",
+    "@heroicons/react": "^1.0.4",
+    "firebase": "^8.10.0",
+    "next": "11.0.1",
+    "next-auth": "^3.29.0",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-firebase-hooks": "^3.0.4",
+    "tailwind-scrollbar-hide": "^1.0.3"
   },
   "devDependencies": {
+    "@babel/helper-compilation-targets": "^7.15.4",
+    "autoprefixer": "^10.3.4",
     "eslint": "7.32.0",
-    "eslint-config-next": "11.1.0"
+    "eslint-config-next": "11.1.0",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.15"
   }
 }
